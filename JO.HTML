@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استكشاف المحافظات الأردنية</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>اكتشف المحافظات الأردنية</h1>
+            <p>دليلك لمعرفة أهم المعلومات وأبرز الأماكن السياحية في المحافظات الأردنية.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="provinces-container">
+            <div class="province-item" onclick="loadProvince('Amman')">
+                <img src="Amman.jpg" alt="عمان">
+                <h3>عمان</h3>
+            </div>
+            <div class="province-item" onclick="loadProvince('Zarqa')">
+                <img src="Zarqa.jpg" alt="الزرقاء">
+                <h3>الزرقاء</h3>
+            </div>
+            <div class="province-item" onclick="loadProvince('Irbid')">
+                <img src="Irbid.jpg" alt="إربد">
+                <h3>إربد</h3>
+            </div>
+            <div class="province-item" onclick="loadProvince('Aqaba')">
+                <img src="Aqaba.jpg" alt="العقبة">
+                <h3>العقبة</h3>
+            </div>
+            <div class="province-item" onclick="loadProvince('Mafraq')">
+                <img src="Mafraq.jpg" alt="المفرق">
+                <h3>المفرق</h3>
+            </div>
+            <div class="province-item" onclick="loadProvince('Karak')">
+                <img src="Karak.jpg" alt="الكرك">
+                <h3>الكرك</h3>
+            </div>
+            <div class="province-item" onclick="loadProvince('Tafila')">
+                <img src="Tafila.jpg" alt="طفيلة">
+                <h3>طفيلة</h3>
+            </div>
+            <div class="province-item" onclick="loadProvince('Maan')">
+                <img src="Maan.jpg" alt="معان">
+                <h3>معان</h3>
+            </div>
+            <div class="province-item" onclick="loadProvince('Balqa')">
+                <img src="Balqa.jpg" alt="البلقاء">
+                <h3>البلقاء</h3>
+            </div>
+            <div class="province-item" onclick="loadProvince('Ajloun')">
+                <img src="Ajloun.jpg" alt="عجلون">
+                <h3>عجلون</h3>
+            </div>
+            <div class="province-item" onclick="loadProvince('Jerash')">
+                <img src="Jerash.jpg" alt="جرش">
+                <h3>جرش</h3>
+            </div>
+            <div class="province-item" onclick="loadProvince('Madaba')">
+                <img src="Madaba.jpg" alt="مادبا">
+                <h3>مادبا</h3>
+            </div>
+        </div>
+
+        <section id="province-details" class="province-details">
+            <!-- سيتم تحميل تفاصيل المحافظة هنا -->
+        </section>
+
+     
+
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
